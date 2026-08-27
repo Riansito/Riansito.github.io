@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfólio de Rian — Engenharia de Dados e Analytics Engineering.">
+  <title>Rian | Data Engineering Portfolio</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container">
+      <a class="brand" href="#home">RIAN<span>.</span></a>
+      <button class="menu-toggle" aria-label="Abrir menu">☰</button>
+      <div class="nav-links">
+        <a href="#projetos">Projetos</a>
+        <a href="#stack">Stack</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#contato">Contato</a>
+        <a class="nav-github" href="https://github.com/Riansito" target="_blank" rel="noopener">GitHub ↗</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="grid-bg"></div>
+      <div class="container hero-content">
+        <p class="eyebrow">DATA ENGINEERING / ANALYTICS ENGINEERING</p>
+        <h1>Do dado bruto ao<br><span>insight confiável.</span></h1>
+        <p class="hero-text">
+          Construo pipelines, plataformas de dados e camadas analíticas
+          utilizando Python, SQL, cloud, orquestração e modelagem de dados.
+        </p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#projetos">Ver projetos ↓</a>
+          <a class="btn secondary" href="https://github.com/Riansito" target="_blank" rel="noopener">GitHub ↗</a>
+        </div>
+        <div class="hero-metrics">
+          <div><strong>04</strong><span>projetos em destaque</span></div>
+          <div><strong>ETL</strong><span>Lakehouse &amp; DW</span></div>
+          <div><strong>BI</strong><span>camada analítica</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projetos" class="section">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">01 / PROJETOS</p>
+            <h2>Projetos em destaque</h2>
+          </div>
+          <p class="section-intro">Uma seleção de projetos end-to-end que representam meu foco em Engenharia de Dados e Analytics Engineering.</p>
+        </div>
+
+        <div class="project-grid">
+          <article class="project-card featured">
+            <div class="project-top"><span class="project-number">01</span><span class="status">END-TO-END</span></div>
+            <h3>E-commerce Data Platform</h3>
+            <p>Arquitetura moderna de dados com Google Cloud Storage, BigQuery, dbt e Power BI, organizada em Bronze, Silver e Gold e com modelagem Star Schema.</p>
+            <div class="tags"><span>GCS</span><span>BigQuery</span><span>dbt</span><span>Power BI</span><span>SQL</span></div>
+            <div class="project-flow">SOURCES → DATA LAKE → BIGQUERY → DBT → GOLD → BI / IA</div>
+            <a class="project-link" href="https://github.com/Riansito" target="_blank" rel="noopener">Ver documentação no GitHub ↗</a>
+          </article>
+
+          <article class="project-card">
+            <div class="project-top"><span class="project-number">02</span><span class="status">DATA WAREHOUSE</span></div>
+            <h3>News Analytics Pipeline + AI Assistant</h3>
+            <p>Pipeline de notícias com ingestão em Python, PostgreSQL Raw, Airflow, dbt, Data Warehouse dimensional, testes de qualidade e camada preparada para um assistente Gemini.</p>
+            <div class="tags"><span>Python</span><span>Airflow</span><span>PostgreSQL</span><span>dbt</span><span>Gemini</span></div>
+            <div class="project-flow">API → RAW → AIRFLOW → DBT → DW → AI CONTEXT → GEMINI</div>
+            <a class="project-link" href="https://github.com/Riansito" target="_blank" rel="noopener">Ver documentação no GitHub ↗</a>
+          </article>
+
+          <article class="project-card">
+            <div class="project-top"><span class="project-number">03</span><span class="status">LAKEHOUSE</span></div>
+            <h3>E-commerce Sales Lakehouse</h3>
+            <p>Lakehouse no Databricks usando Delta Lake, PySpark, Delta Live Tables e Workflows, seguindo a arquitetura Medallion e consolidando uma camada Gold analítica.</p>
+            <div class="tags"><span>Databricks</span><span>PySpark</span><span>Delta Lake</span><span>DLT</span><span>Workflows</span></div>
+            <div class="project-flow">API → BRONZE → SILVER → GOLD → ANALYTICS</div>
+            <a class="project-link" href="https://github.com/Riansito" target="_blank" rel="noopener">Ver documentação no GitHub ↗</a>
+          </article>
+
+          <article class="project-card">
+            <div class="project-top"><span class="project-number">04</span><span class="status">ETL / ORCHESTRATION</span></div>
+            <h3>Financial Data Pipeline</h3>
+            <p>Pipeline ETL automatizado para dados financeiros do Yahoo Finance, com Python, Airflow, PostgreSQL no Neon e consumo analítico no Power BI.</p>
+            <div class="tags"><span>Python</span><span>Airflow</span><span>PostgreSQL</span><span>Docker</span><span>Power BI</span></div>
+            <div class="project-flow">YAHOO FINANCE → ETL → POSTGRESQL → POWER BI</div>
+            <a class="project-link" href="https://github.com/Riansito" target="_blank" rel="noopener">Ver documentação no GitHub ↗</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="stack" class="section section-dark">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">02 / STACK</p>
+            <h2>Tecnologias &amp; práticas</h2>
+          </div>
+        </div>
+        <div class="stack-grid">
+          <div class="stack-card"><span>01</span><h3>Data</h3><p>Python · SQL · Pandas · PostgreSQL · BigQuery · Delta Lake</p></div>
+          <div class="stack-card"><span>02</span><h3>Engineering</h3><p>ETL / ELT · Airflow · dbt · PySpark · Docker · Data Quality</p></div>
+          <div class="stack-card"><span>03</span><h3>Cloud &amp; Lakehouse</h3><p>GCP · GCS · Databricks · Medallion Architecture · Workflows</p></div>
+          <div class="stack-card"><span>04</span><h3>Analytics</h3><p>Star Schema · Data Warehouse · Power BI · DAX · Analytics Layer</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="sobre" class="section">
+      <div class="container about">
+        <div>
+          <p class="eyebrow">03 / SOBRE</p>
+          <h2>Engenharia antes de ferramenta.</h2>
+        </div>
+        <div class="about-copy">
+          <p>Sou estudante de Sistemas de Informação na UFPB, com foco em Engenharia de Dados e Analytics.</p>
+          <p>Meu interesse está em construir soluções que transformem dados brutos em dados confiáveis, estruturados e prontos para análise.</p>
+          <div class="principles">
+            <span>Ingestão</span><span>Transformação</span><span>Qualidade</span><span>Modelagem</span><span>Orquestração</span><span>Analytics</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section process">
+      <div class="container">
+        <p class="eyebrow">04 / COMO EU ENXERGO DADOS</p>
+        <h2>Uma jornada de ponta a ponta.</h2>
+        <div class="process-line">
+          <div><b>01</b><span>Fontes</span></div><i>→</i>
+          <div><b>02</b><span>Ingestão</span></div><i>→</i>
+          <div><b>03</b><span>Lake / Raw</span></div><i>→</i>
+          <div><b>04</b><span>Transformação</span></div><i>→</i>
+          <div><b>05</b><span>DW / Gold</span></div><i>→</i>
+          <div><b>06</b><span>Analytics</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contato" class="section contact">
+      <div class="container contact-box">
+        <p class="eyebrow">05 / CONTATO</p>
+        <h2>Vamos conversar sobre dados?</h2>
+        <p>Estou aberto a oportunidades, projetos e conexões na área de Engenharia de Dados e Analytics.</p>
+        <div class="contact-links">
+          <a href="mailto:rianfreires40@gmail.com">rianfreires40@gmail.com</a>
+          <a href="https://www.linkedin.com/in/rian-freires-798813324/" target="_blank" rel="noopener">LinkedIn ↗</a>
+          <a href="https://github.com/Riansito" target="_blank" rel="noopener">GitHub ↗</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer><div class="container"><span>RIAN.</span><span>Data Engineering &amp; Analytics Engineering</span><span>© 2026</span></div></footer>
+  <script src="js/script.js"></script>
+</body>
+</html>
