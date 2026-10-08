@@ -16,3 +16,55 @@ a{color:inherit;text-decoration:none}.container{width:min(var(--max),calc(100% -
 footer{border-top:1px solid var(--line);padding:28px 0;color:#718092;font-size:.7rem}footer .container{display:flex;justify-content:space-between}footer span:first-child{color:var(--text);font-family:"Space Grotesk";font-weight:700}
 @media(max-width:800px){.nav-links{display:none;position:absolute;top:72px;left:0;right:0;background:#080c11;border-bottom:1px solid var(--line);padding:18px 20px;flex-direction:column;align-items:stretch}.nav-links.open{display:flex}.menu-toggle{display:block}.hero-content{padding:65px 0}.hero-metrics{gap:25px;flex-wrap:wrap;margin-top:50px}.project-grid{grid-template-columns:1fr}.project-card.featured{grid-column:span 1}.stack-grid{grid-template-columns:1fr 1fr}.about{grid-template-columns:1fr;gap:30px}.section-heading{display:block}.section-intro{margin-top:20px}.process-line{display:grid;grid-template-columns:1fr 1fr;gap:25px}.process-line i{display:none}}
 @media(max-width:500px){.container{width:min(var(--max),calc(100% - 28px))}.hero h1{font-size:3rem}.hero-text{font-size:.95rem}.section{padding:75px 0}.stack-grid{grid-template-columns:1fr}.contact-box{padding:30px 22px}.hero-metrics{display:grid;grid-template-columns:1fr 1fr}footer .container{flex-direction:column;gap:8px}}
+
+/* --- New Premium Styles --- */
+/* Scrollbar */
+::-webkit-scrollbar { width: 8px; height: 8px; }
+::-webkit-scrollbar-track { background: var(--bg); }
+::-webkit-scrollbar-thumb { background: #1d2a38; border-radius: 4px; }
+::-webkit-scrollbar-thumb:hover { background: var(--muted); }
+
+/* Buttons Hover */
+.btn { transition: transform 0.3s ease, filter 0.3s ease, box-shadow 0.3s ease; }
+.btn:hover { transform: translateY(-2px); filter: brightness(1.1); }
+.btn.primary:hover { box-shadow: 0 4px 15px rgba(56,189,248, 0.3); }
+
+/* Project Cards Glow */
+.project-card { transition: all 0.3s ease; }
+.project-card:hover { 
+  transform: translateY(-5px); 
+  border-color: var(--accent); 
+  box-shadow: 0 8px 30px -10px rgba(56, 189, 248, 0.25);
+}
+
+/* Contact Links Hover Glow */
+.contact-links a { transition: all 0.3s ease; }
+.contact-links a:hover {
+  box-shadow: 0 4px 15px rgba(56, 189, 248, 0.15);
+  transform: translateY(-2px);
+}
+
+/* Fade-in Animations */
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+.fade-in.appear {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Stagger delay for grid items */
+.project-card:nth-child(2) { transition-delay: 0.1s; }
+.project-card:nth-child(3) { transition-delay: 0.2s; }
+.project-card:nth-child(4) { transition-delay: 0.3s; }
+.project-card:nth-child(5) { transition-delay: 0.4s; }
+.stack-card:nth-child(2) { transition-delay: 0.1s; }
+.stack-card:nth-child(3) { transition-delay: 0.2s; }
+.stack-card:nth-child(4) { transition-delay: 0.3s; }
+
+/* Better hover for Nav Links */
+.nav-links a { transition: color 0.2s ease; }
+.nav-github { transition: all 0.2s ease; }
+.nav-github:hover { background: var(--text); color: var(--bg) !important; border-color: var(--text); }
